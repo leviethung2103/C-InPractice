@@ -13,16 +13,17 @@ using namespace std;
 
 
 // ! Pickup one of two compartor
-
 int comparator(const void *a, const void*b){
     // ascending : tang dan > return -4 
+    cout << "Value a: " << *(int*)a << "Value b: " << *(int*)b << endl;
+    
     return (*(int*)a - *(int*)b);
 }
 
-int comparator(const void *a, const void*b){
-    // descending : giamg dan 9 8 7 6 5 4 3 2 21 
-    return (*(int*)b - *(int*)a);
-}
+// int comparator(const void *a, const void*b){
+//     // descending : giamg dan 9 8 7 6 5 4 3 2 21 
+//     return (*(int*)b - *(int*)a);
+// }
 
 
 void print_array(int array[], int elements)
